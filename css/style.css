@@ -132,7 +132,7 @@ header {
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    background-image: url(img/fondoRelu.png);
+    background-image: url(../img/fondoRelu.png);
     background-repeat: no-repeat; 
     background-position: center; 
 }
@@ -582,7 +582,7 @@ footer {
     /* overflow: hidden; */
     /* background-color: red; */
     position: relative;
-    background-image: url(img/fondoRelu.png);
+    background-image: url(../img/fondoRelu.png);
     background-repeat: no-repeat; /* Para que la imagen no se repita */
     background-position: center; /* Centra la imagen dentro del elemento */
 }
