@@ -104,24 +104,16 @@ nav ul li a:hover {
     flex-direction: column;
     /* background-color: gray; */
     align-items: center;
-}
-
-.titulo-home {
-    width: 100%;
-    height: 100vh;
-    font-family: "Urbanist", sans-serif;
-    /* background-color: blue; */
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
     text-align: center;
     justify-content: center;
     background-image: url(../img/fondoRelu.png);
     background-repeat: no-repeat; 
-    background-position: center; 
+    background-position: center;
+    font-family: "Urbanist", sans-serif;
+    padding: 10px;
 }
 
-h1 {
+.home h1 {
     color: rgb(38, 38, 42);
     font-size: 60px;
     font-weight: 400;
@@ -129,7 +121,7 @@ h1 {
     overflow: hidden;
 }
 
-.p-home {
+.home p {
     margin-top: 20px;
     color: #303035;
     font-size: 18px;
@@ -137,14 +129,7 @@ h1 {
     /* background-color: aqua; */
 }
 
-.cont-button-home {
-    width: 100%;
-    /* background-color: coral; */
-    display: flex;
-    justify-content: center;
-}
-
-.button-home {
+.home button {
     width: 180px;
     height: 50px;
     margin-top: 50px;
@@ -156,13 +141,13 @@ h1 {
     font-family: "Be Vietnam Pro";
 }
 
-.button-home a {
+.home button a {
     text-decoration: none;
     color: white;
 }
 
 
-.button-home:hover {
+.home button:hover {
     transform: scale(1.05);
 }
 
@@ -170,28 +155,17 @@ h1 {
     min-height: 100vh;
     width: 100%;
     display: flex;
-    /* background-color: red; */
+    background-color: red;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     height: “fit-content”;
-}
-
-.cont-features {
-    /* background-color: green; */
-    width: 100%;
     justify-content: space-around;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
     gap: 20px;
     overflow: hidden;
     padding: 20px;
 }
 
-.cont-1,
-.cont-2,
-.cont-3 {
+.features__cont {
     background-color: rgb(252, 252, 252);
     height: 350px;
     width: 400px;
@@ -200,32 +174,24 @@ h1 {
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
 }
 
-.cont-1:hover,
-.cont-2:hover,
-.cont-3:hover {
+.features__cont:hover {
     transform: scale(1.05);
 }
 
-.img-1,
-.img-2,
-.img-3 {
+.features__cont img{
     height: 200px;
     width: 350px;
     border: none;
 }
 
-.h2-1,
-.h2-2,
-.h2-3 {
+.features__cont h2{
     justify-content: left;
     font-family: "Urbanist", sans-serif;
     font-size: 22px;
     font-weight: 600;
 }
 
-.p-1,
-.p-2,
-.p-3 {
+.features__cont p{
     margin-top: 10px;
     font-family: "Be Vietnam Pro", sans-serif;
     font-size: 14px;
@@ -243,20 +209,11 @@ h1 {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    /* background-color: red; */
+    background-color: red;
     overflow: hidden;
 }
 
-.titulo-beneficios {
-    width: 100%;
-    /* background-color: green; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-}
-
-.cont-beneficios {
+.beneficios__cont {
     height: 40px;
     width: 120px;
     padding: 8px;
@@ -272,7 +229,7 @@ h1 {
     overflow: hidden;
 }
 
-.h2-b {
+.beneficios h2 {
     /* background-color: darkgoldenrod; */
     font-family: "Urbanist", sans-serif;
     text-align: center;
@@ -282,7 +239,7 @@ h1 {
     font-weight: 400;
 }
 
-.p-b {
+.beneficios p {
     /* background-color: magenta; */
     font-family: "Be Vietnam Pro", sans-serif;
     text-align: center;
@@ -293,7 +250,7 @@ h1 {
     color: rgb(48, 48, 53);
 }
 
-.button-b {
+.beneficios button {
     width: 180px;
     height: 50px;
     margin-top: 25px;
@@ -305,46 +262,20 @@ h1 {
     font-family: "Be Vietnam Pro", sans-serif;
 }
 
-.button-b a {
+.beneficios button a {
     text-decoration: none;
     color: white;
 }
 
-.button-b:hover {
+.beneficios button:hover {
     transform: scale(1.05);
 }
 
-.img-beneficios {
-    /* background-color: green; */
-    width: 100%;
-    padding: 50px;
-    display: flex;
-}
-
-.img-b {
-    height: 400px;
-    width: 800px;
-    margin-top: 60px;
-    margin-left: 50px;
-}
-
-.cont-text-beneficios {
-    /* background-color: #177BFF; */
-    margin-right: 20px;
-}
-
-.cont-1-b {
-    background-color: green;
-}
-
-.cont-3-b {
-    background-color: gray;
-}
 
 footer {
     width: 100%;
     height: 50vh;
-    background-color: yellow;
+    /* background-color: yellow; */
     padding: 20px;
     margin-top: 300px;
     display: grid;
@@ -353,7 +284,7 @@ footer {
 }
 
 .footer__up {
-    background-color: green;
+    /* background-color: green; */
     text-align: center;
     padding-top: 20px;
     grid-column: span 2;

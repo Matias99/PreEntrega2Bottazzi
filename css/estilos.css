@@ -1,3 +1,278 @@
-h1 {
-  color: red;
+@charset "UTF-8";
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 70px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Urbanist", sans-serif;
+  background-color: transparent;
+  z-index: 1;
+}
+header .cont__logo {
+  min-height: 50px;
+  min-width: 50px;
+  background-color: rgba(217, 217, 217, 0.5);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+header nav ul {
+  list-style: none;
+  background-color: rgba(217, 217, 217, 0.5);
+  display: flex;
+  justify-content: space-around;
+  min-width: 300px;
+  min-height: 50px;
+  align-items: center;
+  overflow: hidden;
+  margin-left: 20px;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-radius: 10px;
+}
+header nav ul li a {
+  color: rgb(48, 48, 53);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 200;
+}
+header nav ul li a::before {
+  content: "";
+  position: absolute;
+  top: 100%; /* Muevo la barra en sentido vertical*/
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: linear-gradient(to right, #177BFF 0%, #797EF3 100%);
+  transition: 0.5s;
+}
+header nav ul li a:hover {
+  background: linear-gradient(to right, #177BFF, #797EF3); /* Gradiente del texto al pasar el puntero */
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  transition: 0.5s;
+}
+
+footer {
+  width: 100%;
+  height: 50vh;
+  padding: 20px;
+  margin-top: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 110px 110px 110px;
+}
+footer .footer__up {
+  text-align: center;
+  padding-top: 20px;
+  grid-column: span 2;
+  grid-row: span 3;
+  overflow: hidden;
+}
+footer .footer__up h2 {
+  font-family: "Urbanist", sans-serif;
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 55.2px;
+}
+footer .footer__up button {
+  width: 180px;
+  height: 50px;
+  margin-top: 30px;
+  background-color: rgb(31, 21, 21);
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+footer .footer__up button:hover {
+  transform: scale(1.05);
+}
+footer .footer__up button a {
+  text-decoration: none;
+  color: white;
+}
+footer p {
+  font-size: 14px;
+  font-weight: 200;
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+footer .footer__der a {
+  grid-column: -2/-1;
+  grid-row: 4/5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer__der a img {
+  height: 20px;
+  width: 20px;
+}
+
+.home {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-image: url(../img/fondoRelu.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Urbanist", sans-serif;
+  padding: 10px;
+}
+.home h1 {
+  color: rgb(38, 38, 42);
+  font-size: 60px;
+  font-weight: 400;
+  overflow: hidden;
+}
+.home p {
+  margin-top: 20px;
+  color: #303035;
+  font-size: 18px;
+  font-weight: 200;
+}
+.home button {
+  width: 180px;
+  height: 50px;
+  margin-top: 50px;
+  background-color: rgb(31, 21, 21);
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Be Vietnam Pro";
+}
+.home button:hover {
+  transform: scale(1.05);
+}
+.home button:hover a {
+  text-decoration: none;
+  color: white;
+}
+
+.features {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  background-color: red;
+  align-items: center;
+  flex-wrap: wrap;
+  height: “fit-content”;
+  justify-content: space-around;
+  gap: 20px;
+  overflow: hidden;
+  padding: 20px;
+}
+.features .features__cont {
+  background-color: rgb(252, 252, 252);
+  height: 350px;
+  width: 400px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+}
+.features .features__cont:hover {
+  transform: scale(1.05);
+}
+.features .features__cont img {
+  height: 200px;
+  width: 350px;
+  border: none;
+}
+.features .features__cont h2 {
+  justify-content: left;
+  font-family: "Urbanist", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+.features .features__cont p {
+  margin-top: 10px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: gray;
+}
+
+.beneficios {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: red;
+  overflow: hidden;
+}
+.beneficios .beneficios__cont {
+  height: 40px;
+  width: 120px;
+  padding: 8px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(8, 110, 255);
+  background-color: rgb(217, 234, 251);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.beneficios h2 {
+  font-family: "Urbanist", sans-serif;
+  text-align: center;
+  margin-top: 40px;
+  color: rgb(38, 38, 42);
+  font-size: 60px;
+  font-weight: 400;
+}
+.beneficios p {
+  font-family: "Be Vietnam Pro", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  margin-top: 20px;
+  color: rgb(48, 48, 53);
+}
+.beneficios button {
+  width: 180px;
+  height: 50px;
+  margin-top: 25px;
+  background-color: rgb(31, 21, 21);
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+.beneficios button:hover {
+  transform: scale(1.05);
+}
+.beneficios button:hover a {
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=estilos.css.map */

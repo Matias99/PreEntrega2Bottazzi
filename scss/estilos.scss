@@ -1,6 +1,6 @@
-h1 {
-    color: red;
-}
+@import "./components/header";
+@import "./components/footer";
+@import "./components/index";
 
 // Reveer que clases estan demas y cuale podrian haber sido anidadas de padre a hijo
 
