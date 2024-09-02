@@ -35,20 +35,10 @@ header {
     font-family: "Urbanist", sans-serif;
     background-color: transparent;
     z-index: 1;
-    /* background-color: green; */
+    background-color: green;
 }
 
-.cont-nav {
-    width: 100%;;
-    height: 55px;
-    /* background-color: red; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.cont-logo {
+.cont__logo {
     min-height: 50px;
     min-width: 50px;
     background-color: rgba(217, 217, 217, 0.5);
@@ -57,17 +47,16 @@ header {
     align-items: center;
     justify-content: center;
     border-radius: 100px;
-    margin-left: 40px;
     /* background-color: yellow; */
 }
 
-.logoRelu {
+.cont__logo a img {
     height: 40px;
     width: 40px;
     /* background-color: blue; */
 }
 
-.nav {
+nav ul {
     list-style: none;
     background-color: rgba(217, 217, 217, 0.5);
     display: flex;
@@ -82,16 +71,15 @@ header {
     /* background-color: blue;     */
 }
 
-.nav a{
+nav ul li a{
     color: rgba(48, 48, 53);
     text-decoration: none;
     font-size: 16px;
     font-weight: 200;
     /* background-color: violet; */
-    /* overflow: hidden; */
 }
 
-.nav a::before {
+nav ul li a::before {
     content: '';
     position: absolute;
     top: 100%; /* Muevo la barra en sentido vertical*/
@@ -102,15 +90,11 @@ header {
     transition: 0.5s;
 }
 
-.nav a:hover {
+nav ul li a:hover {
     background: linear-gradient(to right, #177BFF, #797EF3); /* Gradiente del texto al pasar el puntero */
     color: transparent;
     background-clip: text;
     transition: 0.5s;
-}
-
-.nav a:hover::before {
-    width: 100%;
 }
 
 .home {
@@ -359,22 +343,17 @@ h1 {
 
 footer {
     width: 100%;
-    /* background-color: yellow; */
+    height: 50vh;
+    background-color: yellow;
     padding: 20px;
     margin-top: 300px;
-}
-
-.cont-footer {
-    width: 100%;
-    height: 60vh;
-    /* background-color: #177BFF; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 110px 110px 110px;
 }
 
-.footer-up {
-    /* background-color: green; */
+.footer__up {
+    background-color: green;
     text-align: center;
     padding-top: 20px;
     grid-column: span 2;
@@ -382,14 +361,14 @@ footer {
     overflow: hidden;
 }
 
-.footer-up h2 {
+.footer__up h2 {
     font-family: "Urbanist", sans-serif;
     font-size: 46px;
     font-weight: 400;
     line-height: calc(46px*1.2);
 }
 
-.footer-up button {
+.footer__up button {
     width: 180px;
     height: 50px;
     margin-top: 30px;
@@ -401,39 +380,28 @@ footer {
     font-family: "Be Vietnam Pro", sans-serif;
 }
 
-.footer-up button:hover {
+.footer__up button:hover {
     transform: scale(1.05);
 }
 
-.footer-up button a {
+.footer__up button a {
     text-decoration: none;
     color: white;
 }
 
-.hr{
-    border-width: 0.2px;
-    border-color: gray;
-}
-
-.footer-izq{
-    /* background-color: red; */
+footer p{
+    font-size: 14px;
+    font-weight: 200;
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: gray;
     display: flex;
-    align-items: center;
     justify-content: center;
     padding-left: 20px;
     grid-column: 1/2;
     grid-row: 4/5;
 }
 
-.footer-izq p{
-    font-size: 14px;
-    font-weight: 200;
-    font-family: "Be Vietnam Pro", sans-serif;
-    color: gray;
-}
-
-.footer-der{
-    /* background-color: blue; */
+.footer__der a {    
     grid-column: -2/-1;
     grid-row: 4/5;
     display: flex;
@@ -441,7 +409,7 @@ footer {
     justify-content: center;
 }
 
-.icono-linkedin {
+.footer__der a img {
     height: 20px;
     width: 20px;
 }
