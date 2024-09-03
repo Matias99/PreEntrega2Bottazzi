@@ -1,0 +1,49 @@
+// <!-- ABOUT US -->
+
+// <! 1 SECTION ABOUT US -->
+
+.aboutus {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+
+    h2 {
+        text-align: center;
+        font-size: 42px;
+        font-family: "Urbanist", sans-serif;
+        font-weight: 500;    
+    }
+
+    .aboutus__cont {
+        width: 90%;
+        height: 350px;
+        border-radius: 10px;
+        border-style: none;
+        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+        background-color: rgba(204, 204, 204, 0.2);
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        padding: 20px;
+        justify-content: space-between;
+
+        p {
+            font-size: 14px;
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 200;
+            color: #26262A;
+            padding: 20px;
+        }
+
+        img {
+            border-style: none;
+            border-radius: 10px;
+            height: 300px;
+            width: 500px;
+        }
+    }
+}

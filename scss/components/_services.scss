@@ -1,0 +1,86 @@
+
+// <!-- SERVICES -->
+
+//  <!-- 1 SECTION SERVICES -->
+
+.services {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Urbanist", sans-serif;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    .services__cont {
+        height: 40px;
+        width: 120px;
+        padding: 8px;
+        font-family: "Be Vietnam Pro", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgb( 8, 110, 255);
+        background-color: rgb( 217, 234, 251);
+        border-radius: 5px;
+    }
+
+    h2 {
+        font-family: "Urbanist", sans-serif;
+        text-align: center;
+        margin-top: 40px;
+        color: rgb(38, 38, 42);
+        font-size: 60px;
+        font-weight: 400;
+    }
+
+    p {
+        font-family: "Be Vietnam Pro", sans-serif;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 200;
+        line-height: calc(20px*1.5);
+        margin-top: 20px;
+        color: rgb(48, 48, 53);
+    }
+
+    button {
+        width: 180px;
+        height: 50px;
+        margin-top: 25px;
+        background-color: rgb(31, 21, 21);
+        color: white;
+        border-style: none;
+        border-radius: 5px;
+        font-size: 14px;
+        font-family: "Be Vietnam Pro", sans-serif;
+        &:hover {
+            transform: scale(1.05);        
+        }
+        a {
+            text-decoration: none;
+            color: white;        
+        }
+    }
+}
+
+// <!-- 2 SECTION SERVICES -->
+
+.services__section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    img {
+    height: 600px;
+    width: 600px;
+    border-style: none;
+    margin-top: 60px;    
+    }
+}
