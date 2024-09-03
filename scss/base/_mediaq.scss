@@ -1,2 +1,99 @@
-// Media Queries
-// Tengo que pasar las media querys a (anidados de padre a hijo)
+
+// <!-- MEDIA QUERY -->
+
+// <!-- MAX-WIDTH 500PX -->
+ 
+@media screen and (max-width:500px){
+    
+// <!-- HEADER & NAV -->
+    header {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+
+        .cont__logo {
+            margin-left: 0;
+        }
+
+        nav {
+            margin: 15px 0;
+        }
+    }
+    
+// <!--INDEX | SECTION - HOME -->
+    .home {
+        margin-top: 0;
+
+        h1 {
+            font-size: 46px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+    
+// <!-- INDEX | SECTION - FEATURES -->
+    .features__cont {
+        height: 270px;
+        width: 350px;
+        padding: 15px;
+        overflow: hidden;
+
+        img {
+            height: 150px;
+            width: 300px;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+
+        p {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+    }
+
+// <!-- INDEX | SECTION - BENEFICIOS -->
+    .beneficios h2 {
+        font-size: 46px;
+    }
+
+    .beneficios p {
+        font-size: 16px;
+        line-height: calc(16px*1.5);
+    }
+
+// <!-- FOOTER -->
+    footer {
+        display: flex;
+        flex-direction: column;
+
+        .footer__up {
+            padding: 20px;
+            flex-wrap: wrap;
+            margin-top: 60px;
+            order: 1;
+
+            h2 {
+                font-size: 36px;
+                line-height: calc(36px*1.2);
+            }
+            button {
+                margin-top: 20px;
+            }
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        .footer__der {
+            height: 20%;
+            order: 2;
+        }
+    }
+}
+

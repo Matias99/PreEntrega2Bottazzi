@@ -7,8 +7,6 @@
 }
 
 body {
-    height: 200vh;
-    max-height: 100%; 
     max-width: 100%;
     background-color: rgba(249, 249, 249);
     background-size: cover; 
@@ -685,95 +683,82 @@ footer p{
     /* <-- HEADER & NAV --> */
     header {
         height: auto;
-    }
-    .cont-nav {
-        /* width: 100%; */
         display: flex;
         flex-direction: column;
-        /* background-color: #177BFF; */
-        height: auto;
         padding: 5px;
     }
-    .cont-logo {
+    .cont__logo {
         margin-left: 0;
     }     
-    .nav {
+    header nav {
         margin: 15px 0;
     }
 
     /* <-- HOME --> */
-    .titulo-home {
+    .home {
         margin-top: 0;
     } 
-    h1 {
+    .home h1 {
         font-size: 46px;
     }
-    .p-home {
+    .home p {
         font-size: 16px;
     }
 
     /* <-- FEATURES --> */
-    .cont-1,
-    .cont-2,
-    .cont-3 {
+    .features__cont {
         height: 270px;
         width: 350px;
         padding: 15px;
         overflow: hidden;
     }
     
-    .img-1,
-    .img-2,
-    .img-3 {
+    .features__cont img {
         height: 150px;
         width: 300px;
     }
     
-    .h2-1,
-    .h2-2,
-    .h2-3 {
+    .features__cont h2 {
         font-size: 18px;
     }
     
-    .p-1,
-    .p-2,
-    .p-3 {
+    .features__cont p {
         margin-top: 5px;
         font-size: 14px;
     }
 
     /* <-- BENEFICIOS -->  */
-    .h2-b {
+    .beneficios h2 {
         font-size: 46px;
     }
-    .p-b {
+    .beneficios p {
         font-size: 16px;
         line-height: calc(16px*1.5);
     }
 
     /* <-- FOOTER --> */
-    .cont-footer {
+    .footer {
         display: flex;
         flex-direction: column;
     }
-    .footer-up {
+    .footer__up {
         padding: 20px;
         flex-wrap: wrap;
         margin-top: 60px;
         order: 1;
     }
-    .footer-up h2 {
+    .footer__up h2 {
         font-size: 36px;
         line-height: calc(36px*1.2);
     }
-    .footer-up button {
+    .footer__up button {
         margin-top: 20px;
     }
-    .footer-izq{
-        height: 20%;
-        order: 3;
+
+    footer p {
+        font-size: 12px;
     }
-    .footer-der{
+    .footer__der{
         height: 20%;
         order: 2;
     }
