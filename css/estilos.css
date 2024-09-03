@@ -350,4 +350,234 @@ footer .footer__der a img {
   width: 600px;
   border-style: none;
   margin-top: 60px;
+}
+
+.aboutus {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+  align-items: center;
+}
+.aboutus h2 {
+  text-align: center;
+  font-size: 42px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+}
+.aboutus .aboutus__cont {
+  width: 90%;
+  height: 350px;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgba(204, 204, 204, 0.2);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 20px;
+  justify-content: space-between;
+}
+.aboutus .aboutus__cont p {
+  font-size: 14px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 200;
+  color: #26262A;
+  padding: 20px;
+}
+.aboutus .aboutus__cont img {
+  border-style: none;
+  border-radius: 10px;
+  height: 300px;
+  width: 500px;
+}
+
+.contact {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  background-image: url(../img/fondoRelu.png);
+  background-repeat: no-repeat; /* Para que la imagen no se repita */
+  background-position: center;
+}
+.contact h2 {
+  font-family: "Urbanist", sans-serif;
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 55.2px;
+}
+.contact p {
+  font-family: "Be Vietnam Pro", sans-serif;
+  margin-top: 20px;
+  color: rgb(38, 38, 42);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 27px;
+  text-align: center;
+}
+.contact form {
+  width: 80%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px 80px 80px 80px 80px;
+  row-gap: 5px;
+  padding: 20px;
+}
+.contact form .form__uno {
+  grid-column: span 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.contact form .form__uno label {
+  font-size: 14px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: left;
+  width: 100%;
+}
+.contact form .form__uno input {
+  height: 40px;
+  width: 100%;
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  padding-left: 15px;
+  color: gainsboro;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  margin-top: 5px;
+}
+.contact form .forom__dos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  grid-column: span 2;
+  padding: 10px;
+}
+.contact form .forom__dos label {
+  font-size: 14px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: left;
+  width: 100%;
+}
+.contact form .forom__dos input {
+  height: 40px;
+  width: 100%;
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  padding-left: 15px;
+  color: gainsboro;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  margin-top: 5px;
+}
+.contact form button {
+  height: 40px;
+  width: 80%;
+  background-color: black;
+  border-style: none;
+  border-radius: 5px;
+  grid-column: span 2;
+}
+.contact form button:hover {
+  transform: scale(1.05);
+}
+.contact form button a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 300;
+}
+
+.platform {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: linear-gradient(to right, rgba(23, 123, 255, 0.2), rgba(121, 126, 243, 0.2));
+  overflow-y: hidden;
+}
+.platform .platform__cont {
+  width: 60%;
+  height: 500px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.platform .platform__cont img {
+  height: 125px;
+  width: 125px;
+}
+.platform .platform__cont form {
+  height: 300px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+}
+.platform .platform__cont form label {
+  font-size: 14px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 300;
+  color: black;
+  margin-top: 20px;
+}
+.platform .platform__cont form input {
+  height: 40px;
+  width: 100%;
+  border: 0.2px solid gray;
+  border-radius: 5px;
+  align-items: center;
+  padding-left: 15px;
+  color: gray;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+.platform .platform__cont form button {
+  height: 40px;
+  width: 100%;
+  background-color: black;
+  border-style: none;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.platform .platform__cont form button:hover {
+  transform: scale(1.05);
+}
+.platform .platform__cont form button a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 300;
 }/*# sourceMappingURL=estilos.css.map */

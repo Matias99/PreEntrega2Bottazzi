@@ -441,7 +441,6 @@ footer p{
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: gray;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -463,7 +462,7 @@ footer p{
     font-family: "Be Vietnam Pro", sans-serif;
     margin-top: 20px;
     color: rgb(38, 38, 42);
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 300;
     line-height: calc(18px*1.5);
     text-align: center;
@@ -475,95 +474,42 @@ footer p{
     /* background-color: gray; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px 80px 80px;
     row-gap: 5px;
     padding: 20px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
 }
 
-.cont-email,
-.cont-company,
-.cont-message {
-    height: 90px;
-    width: 50%;
-    background-color: brown;
-    display: flex;
-    flex-direction: column;    
-}
-
-.cont-nombre {
-    height: 90px;
-    width: 45%;
-    /* background-color: brown; */
-    display: flex;
-    flex-direction: column;
-    margin-right: 10px;    
-}
-
-.cont-apellido {
-    height: 90px;
-    width: 45%;
-    /* background-color: brown; */
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;    
-}
-
-.input-nombre {
-    align-items: end;
-    background-color: green;
+.form__uno {
+    /* background-color: green; */
     grid-column: span 1;
-    padding: 0px 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    /* overflow: hidden; */
 }
 
-.input-apellido {
-    align-items: start;
-    /* background-color: aqua; */
-    grid-column: span 1;
-    padding: 0px 10px;
+.form__dos {
     display: flex;
     flex-direction: column;
-    /* overflow: hidden; */
-}
-
-.input-email,
-.input-company,
-.input-message {
-    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: yellow;
+    /* background-color: yellow; */
     grid-column: span 2;
-    /* row-gap: 20px; */
-    padding: 20px;
+    padding: 10px;
 }
 
-.input-email label,
-.input-nombre label,
-.input-apellido label,
-.input-company label,
-.input-message label {
+.form__uno label,
+.form__dos label {
     font-size: 14px;
     font-family: "Urbanist", sans-serif;
     font-weight: 300;
     color: black;
-    margin-top: 30px;
-    /* background-color: green; */
     text-align: left;
     width: 100%;
 }
 
-.input-email input,
-.input-nombre input,
-.input-apellido input,
-.input-company input,
-.input-message input{
+.form__uno input,
+.form__dos input {
     height: 40px;
     width: 100%;
     border-style: none;
@@ -578,84 +524,68 @@ footer p{
     margin-top: 5px;
 }
 
-.cont-button-contact {
-    width: 100%;
-    height: 60px;
-    /* background-color: green; */
+.contact form button {
+    height: 40px;
+    width: 80%;
+    background-color: black;
+    border-style: none;
+    border-radius: 5px;
     grid-column: span 2;
 }
 
-.button-contact {
-    height: 40px;
-    width: 40%;
-    background-color: black;
+.contact form button:hover {
+    transform: scale(1.05);
+}
+
+.contact form button a {
+    text-decoration: none;
     color: white;
     font-size: 14px;
     font-family: "Urbanist", sans-serif;
     font-weight: 300;
-    border-style: none;
-    border-radius: 5px;
-    margin-top: 30px;
 }
 
-.body-platform {
-    background: linear-gradient(to right, rgba(23, 123, 255, 0.2), rgba(121, 126, 243, 0.2));
-    overflow: hidden;
-}
-
-.section-platform {
-    /* height: 100vh; */
+.platform {
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: red; */
     padding: 40px;
+    background: linear-gradient(to right, rgba(23, 123, 255, 0.2), rgba(121, 126, 243, 0.2));
+    overflow-y: hidden;
 }
 
-.cont-platform {
-    margin-top: 800px;
-    width: 35%;
-    height: 550px;
+.platform__cont {
+    width: 60%;
+    height: 500px;
     background-color: white;
     border-radius: 30px;
     box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     /* background-color: green; */
-}
-
-.img-platform {
-    width: 100%;
-    height: 200px;
-    display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
-.img-p {
+.platform__cont img {
     height: 125px;
     width: 125px;
 }
 
-.form-p {
+.platform__cont form {
     height: 300px;
     width: 80%;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    margin-left: 60px;
+    padding: 20px;
+    justify-content: center;
 }
 
-.email-platform,
-.pw-platform {
-    display: flex;
-    flex-direction: column;
-}
-
-.email-platform label,
-.pw-platform label {
+.platform__cont form label {
     font-size: 14px;
     font-family: "Urbanist", sans-serif;
     font-weight: 300;
@@ -663,32 +593,39 @@ footer p{
     margin-top: 20px;
 }
 
-.email-platform input,
-.pw-platform input {
+.platform__cont form input {
     height: 40px;
-    width: 90%;
+    width: 100%;
     border: 0.2px solid gray;
     border-radius: 5px;
     align-items: center;
     padding-left: 15px;
-    color: gainsboro;
+    color: gray;
     font-family: "Be Vietnam Pro", sans-serif;
     font-size: 16px;
     font-weight: 300;
     margin-top: 5px;
 }
 
-.button-platform {
+.platform__cont form button {
     height: 40px;
-    width: 90%;
+    width: 100%;
     background-color: black;
+    border-style: none;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.platform__cont form button:hover {
+    transform: scale(1.05);
+}
+
+.platform__cont form button a {
+    text-decoration: none;
     color: white;
     font-size: 14px;
     font-family: "Urbanist", sans-serif;
     font-weight: 300;
-    border-style: none;
-    border-radius: 5px;
-    margin-top: 30px;
 }
 
 /* <--- MEDIA QUERY ---> */

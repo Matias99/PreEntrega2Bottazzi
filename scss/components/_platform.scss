@@ -1,0 +1,82 @@
+// <!-- PLATFORM -->
+
+// <!-- 1 SECTION PLATFORM -->
+
+.platform {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(to right, rgba(23, 123, 255, 0.2), rgba(121, 126, 243, 0.2));
+    overflow-y: hidden;
+
+    .platform__cont {
+        width: 60%;
+        height: 500px;
+        background-color: white;
+        border-radius: 30px;
+        box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+
+        img {
+            height: 125px;
+            width: 125px;
+        }
+
+        form {
+            height: 300px;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            justify-content: center;
+
+            label {
+                font-size: 14px;
+                font-family: "Urbanist", sans-serif;
+                font-weight: 300;
+                color: black;
+                margin-top: 20px;
+            }
+
+            input {
+                height: 40px;
+                width: 100%;
+                border: 0.2px solid gray;
+                border-radius: 5px;
+                align-items: center;
+                padding-left: 15px;
+                color: gray;
+                font-family: "Be Vietnam Pro", sans-serif;
+                font-size: 16px;
+                font-weight: 300;
+                margin-top: 5px;
+            }
+
+            button {
+                height: 40px;
+                width: 100%;
+                background-color: black;
+                border-style: none;
+                border-radius: 5px;
+                margin-top: 30px;
+                &:hover {
+                    transform: scale(1.05);   
+                }
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 14px;
+                    font-family: "Urbanist", sans-serif;
+                    font-weight: 300;    
+                }
+            }
+        }
+    }
+}
