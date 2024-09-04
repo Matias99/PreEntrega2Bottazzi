@@ -1,9 +1,112 @@
 
 // <!-- MEDIA QUERY -->
 
+// <!-- MAX-WIDTH 1184PX -->
+
+@media screen and (max-width:1184px) {
+    .services__section img {
+        height: 500px;
+        width: 500px;
+        border-style: none;
+    }
+}
+
+// <!-- MAX-WIDTH 822PX -->
+
+@media screen and (max-width:822px) {
+    
+    /* <!-- ABOUT US --> */
+    .aboutus__cont {
+        flex-direction: column;
+        height: auto;
+        width: 80%;
+
+        p {
+            text-align: center;
+        }
+    }
+}
+
+// <!-- MAX-WIDTH 680PX -->
+
+@media screen and (max-width:680px) {
+    /* <!-- ABOUT US --> */
+    .aboutus__cont img {
+        height: 250px;
+        width: 450px;
+    }
+}
+
+// <!-- MAX-WIDTH 615PX -->
+
+@media screen and (max-width:615px) {
+
+    /* <!-- SERVICES --> */
+    .services h2 {
+        font-size: 48px;
+    }
+
+    .cont-accordion {
+        width: 80%;
+    }
+
+    .services__section img {
+        height: 450px;
+        width: 450px;
+    }
+
+    /* <!-- ABOUT US --> */
+    .aboutus__cont {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+
+        p {
+            font-size: 13px;
+        }
+    }
+}
+
+// <!-- MAX-WIDTH 530PX -->
+
+@media screen and (max-width:530px) {
+
+    /* <!-- SERVICES --> */
+    .services__section img {
+        height: 400px;
+        width: 400px;
+    }
+
+    /* <!-- ABOUT US --> */
+    .aboutus__cont img {
+        height: 200px;
+        width: 400px;
+    }
+
+}
+
+// <!-- MAX-WIDTH 530PX -->
+
+@media screen and (max-width:515px) {
+
+    /* <!-- SERVICES --> */
+    .services__section img {
+        height: 350px;
+        width: 350px;
+    }
+    .services__cont {
+        margin-top: 60px;
+    }
+
+    /* <!-- ABOUT US --> */
+    .aboutus h2 {
+        margin-top: 60px;
+    }
+}
+
 // <!-- MAX-WIDTH 500PX -->
  
-@media screen and (max-width:500px){
+@media screen and (max-width:500px) {
     
 // <!-- HEADER & NAV -->
     header {
@@ -95,20 +198,69 @@
             order: 2;
         }
     }
+
+// <!-- CONTACT --> 
+    .contact h2 {
+        margin-top: 140px;
+    }
+
+    .contact p {
+        font-size: 13px;
+    }
+}
+
+// <!-- MAX-WIDTH 470PX -->
+
+@media screen and (max-width:470px) {
+
+    /* <!-- SERVICES --> */
+    .services__cont {
+        margin-top: 100px;
+    }
+
+    /* <!-- ABOUT US --> */
+    .aboutus__cont img {
+        height: 200px;
+        width: 350px;
+    }
+}
+
+// <!-- MAX-WIDTH 435PX -->
+
+@media screen and (max-width:435px) {
+    .services__cont {
+        margin-top: 120px;
+    }
 }
 
 // <!-- MAX-WIDTH 415PX -->
 
 @media screen and (max-width:415px) {
+
+    // <!-- FOOTER -->
     .footer__up h2 {
         font-size: 28px;
         line-height: calc(28px*1.2);
+    }
+
+    /* <!-- SERVICES --> */
+       .services__section img {
+        height: 300px;
+        width: 300px;
+    }
+
+    /* <!-- ABOUT US --> */
+    .aboutus__cont img {
+        height: 200px;
+        width: 300px;
     }
 }
 
 // <!-- MAX-WIDTH 370PX -->
 
 @media screen and (max-width:370px){
+
+    // <!-- FEATURES -->
     .features__cont img{
         height: 150px;
         width: 280px;
