@@ -33,7 +33,7 @@ header {
     font-family: "Urbanist", sans-serif;
     background-color: transparent;
     z-index: 1;
-    background-color: green;
+    /* background-color: green; */
 }
 
 .cont__logo {

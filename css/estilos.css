@@ -13,84 +13,12 @@ body {
   background-size: cover;
   background-position: center;
 }
-
 body main {
   overflow: auto;
   display: flex;
   flex-direction: column;
 }
 
-@media screen and (max-width: 500px) {
-  header {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-  }
-  header .cont__logo {
-    margin-left: 0;
-  }
-  header nav {
-    margin: 15px 0;
-  }
-  .home {
-    margin-top: 0;
-  }
-  .home h1 {
-    font-size: 46px;
-  }
-  .home p {
-    font-size: 16px;
-  }
-  .features__cont {
-    height: 270px;
-    width: 350px;
-    padding: 15px;
-    overflow: hidden;
-  }
-  .features__cont img {
-    height: 150px;
-    width: 300px;
-  }
-  .features__cont h2 {
-    font-size: 18px;
-  }
-  .features__cont p {
-    margin-top: 5px;
-    font-size: 14px;
-  }
-  .beneficios h2 {
-    font-size: 46px;
-  }
-  .beneficios p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  footer {
-    display: flex;
-    flex-direction: column;
-  }
-  footer .footer__up {
-    padding: 20px;
-    flex-wrap: wrap;
-    margin-top: 60px;
-    order: 1;
-  }
-  footer .footer__up h2 {
-    font-size: 36px;
-    line-height: 43.2px;
-  }
-  footer .footer__up button {
-    margin-top: 20px;
-  }
-  footer p {
-    font-size: 12px;
-  }
-  footer .footer__der {
-    height: 20%;
-    order: 2;
-  }
-}
 header {
   position: fixed;
   top: 0;
@@ -241,7 +169,7 @@ footer .footer__der a img {
 .home p {
   margin-top: 20px;
   color: #303035;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 200;
 }
 .home button {
@@ -344,7 +272,7 @@ footer .footer__der a img {
 .beneficios p {
   font-family: "Be Vietnam Pro", sans-serif;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 200;
   line-height: 30px;
   margin-top: 20px;
@@ -672,4 +600,193 @@ footer .footer__der a img {
   font-size: 14px;
   font-family: "Urbanist", sans-serif;
   font-weight: 300;
+}
+
+@media screen and (max-width: 1184px) {
+  .services__section img {
+    height: 500px;
+    width: 500px;
+    border-style: none;
+  }
+}
+@media screen and (max-width: 822px) {
+  /* <!-- ABOUT US --> */
+  .aboutus__cont {
+    flex-direction: column;
+    height: auto;
+    width: 80%;
+  }
+  .aboutus__cont p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 680px) {
+  /* <!-- ABOUT US --> */
+  .aboutus__cont img {
+    height: 250px;
+    width: 450px;
+  }
+}
+@media screen and (max-width: 615px) {
+  /* <!-- SERVICES --> */
+  .services h2 {
+    font-size: 48px;
+  }
+  .cont-accordion {
+    width: 80%;
+  }
+  .services__section img {
+    height: 450px;
+    width: 450px;
+  }
+  /* <!-- ABOUT US --> */
+  .aboutus__cont {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+  }
+  .aboutus__cont p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 530px) {
+  /* <!-- SERVICES --> */
+  .services__section img {
+    height: 400px;
+    width: 400px;
+  }
+  /* <!-- ABOUT US --> */
+  .aboutus__cont img {
+    height: 200px;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 515px) {
+  /* <!-- SERVICES --> */
+  .services__section img {
+    height: 350px;
+    width: 350px;
+  }
+  .services__cont {
+    margin-top: 60px;
+  }
+  /* <!-- ABOUT US --> */
+  .aboutus h2 {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+  header .cont__logo {
+    margin-left: 0;
+  }
+  header nav {
+    margin: 15px 0;
+  }
+  .home {
+    margin-top: 0;
+  }
+  .home h1 {
+    font-size: 46px;
+  }
+  .home p {
+    font-size: 16px;
+  }
+  .features__cont {
+    height: 270px;
+    width: 350px;
+    padding: 15px;
+    overflow: hidden;
+  }
+  .features__cont img {
+    height: 150px;
+    width: 300px;
+  }
+  .features__cont h2 {
+    font-size: 18px;
+  }
+  .features__cont p {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  .beneficios h2 {
+    font-size: 46px;
+  }
+  .beneficios p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer__up {
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    order: 1;
+  }
+  footer .footer__up h2 {
+    font-size: 36px;
+    line-height: 43.2px;
+  }
+  footer .footer__up button {
+    margin-top: 20px;
+  }
+  footer p {
+    font-size: 12px;
+  }
+  footer .footer__der {
+    height: 20%;
+    order: 2;
+  }
+  .contact h2 {
+    margin-top: 140px;
+  }
+  .contact p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 470px) {
+  /* <!-- SERVICES --> */
+  .services__cont {
+    margin-top: 100px;
+  }
+  /* <!-- ABOUT US --> */
+  .aboutus__cont img {
+    height: 200px;
+    width: 350px;
+  }
+}
+@media screen and (max-width: 435px) {
+  .services__cont {
+    margin-top: 120px;
+  }
+}
+@media screen and (max-width: 415px) {
+  .footer__up h2 {
+    font-size: 28px;
+    line-height: 33.6px;
+  }
+  /* <!-- SERVICES --> */
+  .services__section img {
+    height: 300px;
+    width: 300px;
+  }
+  /* <!-- ABOUT US --> */
+  .aboutus__cont img {
+    height: 200px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .features__cont img {
+    height: 150px;
+    width: 280px;
+  }
 }/*# sourceMappingURL=estilos.css.map */
