@@ -241,9 +241,9 @@ nav ul li a:hover {
     /* background-color: magenta; */
     font-family: "Be Vietnam Pro", sans-serif;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 200;
-    line-height: calc(20px*1.5);
+    line-height: calc(16px*1.5);
     margin-top: 20px;
     color: rgb(48, 48, 53);
 }
@@ -357,6 +357,7 @@ footer p{
     font-family: "Urbanist", sans-serif;
     flex-wrap: wrap;
     overflow: hidden;
+    background-color: #177BFF;
 }
 
 .services__cont {
@@ -379,6 +380,7 @@ footer p{
     align-items: center;
     flex-wrap: wrap;
     overflow: hidden;
+    /* background-color: red; */
 }
 
 .services__section img {
@@ -396,6 +398,7 @@ footer p{
     justify-content: center;
     gap: 60px;
     align-items: center;
+    /* background-color: #177BFF; */
 }
 
 .aboutus h2 {
@@ -405,16 +408,8 @@ footer p{
     font-weight: 500;
 }
 
-.aboutus__cont p {
-    font-size: 14px;
-    font-family: "Be Vietnam Pro", sans-serif;
-    font-weight: 200;
-    color: #26262A;
-    padding: 20px;
-}
-
 .aboutus__cont {
-    width: 90%;
+    max-width: 800px;
     height: 350px;
     border-radius: 10px;
     border-style: none;
@@ -425,6 +420,14 @@ footer p{
     overflow: hidden;
     padding: 20px;
     justify-content: space-between;
+}
+
+.aboutus__cont p {
+    font-size: 14px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 200;
+    color: #26262A;
+    padding: 20px;
 }
 
 .aboutus__cont img {
@@ -629,14 +632,7 @@ footer p{
 /* <--- MEDIA QUERY ---> */
 
 @media screen and (max-width:1184px) {
-    .img-services {
-        height: 100%;
-        width: 50%;
-        background-color: gray;
-        display: flex;
-    }
-    
-    .img-s {
+    .services__section img {
         height: 500px;
         width: 500px;
         border-style: none;
@@ -644,37 +640,92 @@ footer p{
 }
 
 @media screen and (max-width:1055px) {
-    .img-services {
-        height: 100%;
-        display: flex;
-        margin-top: 20px;
-    }
+
+}
+@media screen and (max-width:822px) {
     
-    .img-s {
-        height: 400px;
-        width: 400px;
-        border-style: none;
+    /* <!-- ABOUT US --> */
+    .aboutus__cont {
+        flex-direction: column;
+        height: auto;
+        width: 80%;
     }
+
+    .aboutus__cont p {
+        text-align: center;
+    }
+
 }
 
-
-@media screen and (max-width:728px) {
-    .titulo-services {
-        margin-top: 40px;
+@media screen and (max-width:680px) {
+    
+    /* <!-- ABOUT US --> */
+    .aboutus__cont img {
+        height: 250px;
+        width: 450px;
     }
+
 }
 
 @media screen and (max-width:615px) {
-    .titulo-services {
-        margin-top: 60px;
+
+    /* <!-- SERVICES --> */
+    .services h2 {
+        font-size: 48px;
     }
+
+    .cont-accordion {
+        width: 80%;
+    }
+
+    .services__section img {
+        height: 450px;
+        width: 450px;
+    }
+
+    /* <!-- ABOUT US --> */
+    .aboutus__cont {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+    
+    .aboutus__cont p {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width:530px) {
+
+    /* <!-- SERVICES --> */
+    .services__section img {
+        height: 400px;
+        width: 400px;
+    }
+
+        /* <!-- ABOUT US --> */
+        .aboutus__cont img {
+            height: 200px;
+            width: 400px;
+        }
+
 }
 
 @media screen and (max-width:515px) {
-    .img-s {
-        height: 300px;
-        width: 300px;
-        border-style: none;
+
+    /* <!-- SERVICES --> */
+    .services__section img {
+        height: 350px;
+        width: 350px;
+    }
+    .services__cont {
+        margin-top: 60px;
+    }
+
+    /* <!-- ABOUT US --> */
+    .aboutus h2 {
+        margin-top: 60px;
     }
 }
 
@@ -764,20 +815,47 @@ footer p{
     }
 }
 
+@media screen and (max-width:470px) {
+
+    /* <!-- SERVICES --> */
+    .services__cont {
+        margin-top: 100px;
+    }
+
+    /* <!-- ABOUT US --> */
+    .aboutus__cont img {
+        height: 200px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:435px) {
+    .services__cont {
+        margin-top: 120px;
+    }
+}
+
 @media screen and (max-width:415px) {
-    .footer-up h2 {
+    .footer__up h2 {
         font-size: 28px;
         line-height: calc(28px*1.2);
     }
-    .footer-izq p {
-        font-size: 12px;
+
+    /* <!-- SERVICES --> */
+    .services__section img {
+        height: 300px;
+        width: 300px;
+    }
+
+    /* <!-- ABOUT US --> */
+    .aboutus__cont img {
+        height: 200px;
+        width: 300px;
     }
 }
 
 @media screen and (max-width:370px){
-    .img-1,
-    .img-2,
-    .img-3 {
+    .features__cont img{
         height: 150px;
         width: 280px;
     }

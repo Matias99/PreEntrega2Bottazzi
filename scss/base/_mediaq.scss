@@ -97,3 +97,22 @@
     }
 }
 
+// <!-- MAX-WIDTH 415PX -->
+
+@media screen and (max-width:415px) {
+    .footer__up h2 {
+        font-size: 28px;
+        line-height: calc(28px*1.2);
+    }
+}
+
+// <!-- MAX-WIDTH 370PX -->
+
+@media screen and (max-width:370px){
+    .features__cont img{
+        height: 150px;
+        width: 280px;
+    }
+
+}
+
