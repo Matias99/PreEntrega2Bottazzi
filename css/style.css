@@ -449,6 +449,7 @@ footer p{
     background-image: url(../img/fondoRelu.png);
     background-repeat: no-repeat; /* Para que la imagen no se repita */
     background-position: center;
+    padding: 20px;
 }
 
 
@@ -470,7 +471,7 @@ footer p{
 }
 
 .contact form {
-    width: 80%;
+    max-width: 400px;
     height: 500px;
     /* background-color: gray; */
     display: grid;
@@ -558,7 +559,7 @@ footer p{
 }
 
 .platform__cont {
-    width: 60%;
+    width: 400px;
     height: 500px;
     background-color: white;
     border-radius: 30px;
@@ -568,7 +569,7 @@ footer p{
     /* background-color: green; */
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .platform__cont img {
@@ -578,7 +579,7 @@ footer p{
 
 .platform__cont form {
     height: 300px;
-    width: 80%;
+    width: 90%;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
@@ -812,6 +813,15 @@ footer p{
     .footer__der{
         height: 20%;
         order: 2;
+    }
+
+    /* <!-- CONTACT --> */
+    .contact h2 {
+        margin-top: 140px;
+    }
+
+    .contact p {
+        font-size: 13px;
     }
 }
 
