@@ -29,7 +29,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Urbanis", sans-serif;
   background-color: transparent;
   z-index: 1;
 }
@@ -71,7 +71,7 @@ header nav ul li a::before {
   left: 0;
   width: 0;
   height: 1px;
-  background: linear-gradient(to right, #177BFF 0%, #797EF3 100%);
+  background: linear-gradient(to right, #177BFF, #797EF3);
   transition: 0.5s;
 }
 header nav ul li a:hover {
@@ -99,7 +99,7 @@ footer .footer__up {
   overflow: hidden;
 }
 footer .footer__up h2 {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Urbanis", sans-serif;
   font-size: 46px;
   font-weight: 400;
   line-height: 55.2px;
@@ -108,25 +108,25 @@ footer .footer__up button {
   width: 180px;
   height: 50px;
   margin-top: 30px;
-  background-color: rgb(31, 21, 21);
-  color: white;
+  background-color: rgb(38, 38, 42);
+  color: rgb(249, 249, 249);
   border-style: none;
   border-radius: 5px;
   font-size: 14px;
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Urbanis", sans-serif;
 }
 footer .footer__up button:hover {
   transform: scale(1.05);
 }
 footer .footer__up button a {
   text-decoration: none;
-  color: white;
+  color: rgb(249, 249, 249);
 }
 footer p {
   font-size: 14px;
   font-weight: 200;
   font-family: "Be Vietnam Pro", sans-serif;
-  color: gray;
+  color: rgb(204, 204, 204);
   display: flex;
   justify-content: center;
   padding-left: 20px;
@@ -150,14 +150,13 @@ footer .footer__der a img {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: gray;
   align-items: center;
   text-align: center;
   justify-content: center;
   background-image: url(../img/fondoRelu.png);
   background-repeat: no-repeat;
   background-position: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Urbanis";
   padding: 10px;
 }
 .home h1 {
@@ -168,7 +167,7 @@ footer .footer__der a img {
 }
 .home p {
   margin-top: 20px;
-  color: #303035;
+  color: rgb(48, 48, 53);
   font-size: 16px;
   font-weight: 200;
 }
@@ -176,8 +175,8 @@ footer .footer__der a img {
   width: 180px;
   height: 50px;
   margin-top: 50px;
-  background-color: rgb(31, 21, 21);
-  color: white;
+  background-color: rgb(38, 38, 42);
+  color: rgb(249, 249, 249);
   border-style: none;
   border-radius: 5px;
   font-size: 14px;
@@ -188,14 +187,13 @@ footer .footer__der a img {
 }
 .home button:hover a {
   text-decoration: none;
-  color: white;
+  color: rgb(249, 249, 249);
 }
 
 .features {
   min-height: 100vh;
   width: 100%;
   display: flex;
-  background-color: red;
   align-items: center;
   flex-wrap: wrap;
   height: “fit-content”;
@@ -205,7 +203,7 @@ footer .footer__der a img {
   padding: 20px;
 }
 .features .features__cont {
-  background-color: rgb(252, 252, 252);
+  background-color: rgb(249, 249, 249);
   height: 350px;
   width: 400px;
   padding: 25px;
@@ -222,7 +220,7 @@ footer .footer__der a img {
 }
 .features .features__cont h2 {
   justify-content: left;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
   font-size: 22px;
   font-weight: 600;
 }
@@ -231,7 +229,7 @@ footer .footer__der a img {
   font-family: "Be Vietnam Pro", sans-serif;
   font-size: 14px;
   font-weight: 300;
-  color: gray;
+  color: rgb(204, 204, 204);
 }
 
 .beneficios {
@@ -243,7 +241,6 @@ footer .footer__der a img {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: red;
   overflow: hidden;
 }
 .beneficios .beneficios__cont {
@@ -262,7 +259,7 @@ footer .footer__der a img {
   overflow: hidden;
 }
 .beneficios h2 {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Urbanis", sans-serif;
   text-align: center;
   margin-top: 40px;
   color: rgb(38, 38, 42);
@@ -270,7 +267,7 @@ footer .footer__der a img {
   font-weight: 400;
 }
 .beneficios p {
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Urbanis", sans-serif;
   text-align: center;
   font-size: 16px;
   font-weight: 200;
@@ -282,19 +279,18 @@ footer .footer__der a img {
   width: 180px;
   height: 50px;
   margin-top: 25px;
-  background-color: rgb(31, 21, 21);
-  color: white;
+  background-color: rgb(38, 38, 42);
   border-style: none;
   border-radius: 5px;
-  font-size: 14px;
-  font-family: "Be Vietnam Pro", sans-serif;
 }
 .beneficios button:hover {
   transform: scale(1.05);
 }
 .beneficios button:hover a {
   text-decoration: none;
-  color: white;
+  color: rgb(249, 249, 249);
+  font-size: 14px;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .services {
@@ -305,7 +301,7 @@ footer .footer__der a img {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Urbanis", sans-serif;
   flex-wrap: wrap;
   overflow: hidden;
 }
@@ -321,7 +317,7 @@ footer .footer__der a img {
   border-radius: 5px;
 }
 .services h2 {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Urbanis", sans-serif;
   text-align: center;
   margin-top: 40px;
   color: rgb(38, 38, 42);
@@ -331,7 +327,7 @@ footer .footer__der a img {
 .services p {
   font-family: "Be Vietnam Pro", sans-serif;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 200;
   line-height: 30px;
   margin-top: 20px;
@@ -341,8 +337,8 @@ footer .footer__der a img {
   width: 180px;
   height: 50px;
   margin-top: 25px;
-  background-color: rgb(31, 21, 21);
-  color: white;
+  background-color: rgb(38, 38, 42);
+  color: rgb(249, 249, 249);
   border-style: none;
   border-radius: 5px;
   font-size: 14px;
@@ -353,7 +349,7 @@ footer .footer__der a img {
 }
 .services button a {
   text-decoration: none;
-  color: white;
+  color: rgb(249, 249, 249);
 }
 
 .services__section {
@@ -383,8 +379,8 @@ footer .footer__der a img {
 }
 .aboutus h2 {
   text-align: center;
-  font-size: 42px;
-  font-family: "Urbanist", sans-serif;
+  font-size: 46px;
+  font-family: "Urbanis", sans-serif;
   font-weight: 500;
 }
 .aboutus .aboutus__cont {
@@ -404,7 +400,7 @@ footer .footer__der a img {
   font-size: 14px;
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 200;
-  color: #26262A;
+  color: rgb(38, 38, 42);
   padding: 20px;
 }
 .aboutus .aboutus__cont img {
@@ -428,7 +424,7 @@ footer .footer__der a img {
   background-position: center;
 }
 .contact h2 {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Urbanis", sans-serif;
   font-size: 46px;
   font-weight: 400;
   line-height: 55.2px;
@@ -459,9 +455,9 @@ footer .footer__der a img {
 }
 .contact form .form__uno label {
   font-size: 14px;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Urbanis", sans-serif;
   font-weight: 300;
-  color: black;
+  color: rgb(38, 38, 42);
   text-align: left;
   width: 100%;
 }
@@ -473,7 +469,7 @@ footer .footer__der a img {
   box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.1);
   align-items: center;
   padding-left: 15px;
-  color: gainsboro;
+  color: rgb(204, 204, 204);
   font-family: "Be Vietnam Pro", sans-serif;
   font-size: 14px;
   font-weight: 200;
@@ -490,9 +486,9 @@ footer .footer__der a img {
 }
 .contact form .forom__dos label {
   font-size: 14px;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Urbanis", sans-serif;
   font-weight: 300;
-  color: black;
+  color: rgb(38, 38, 42);
   text-align: left;
   width: 100%;
 }
@@ -504,7 +500,7 @@ footer .footer__der a img {
   box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.1);
   align-items: center;
   padding-left: 15px;
-  color: gainsboro;
+  color: rgb(204, 204, 204);
   font-family: "Be Vietnam Pro", sans-serif;
   font-size: 14px;
   font-weight: 200;
@@ -513,7 +509,7 @@ footer .footer__der a img {
 .contact form button {
   height: 40px;
   width: 80%;
-  background-color: black;
+  background-color: rgb(38, 38, 42);
   border-style: none;
   border-radius: 5px;
   grid-column: span 2;
@@ -523,9 +519,9 @@ footer .footer__der a img {
 }
 .contact form button a {
   text-decoration: none;
-  color: white;
+  color: rgb(249, 249, 249);
   font-size: 14px;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Urbanis", sans-serif;
   font-weight: 300;
 }
 
@@ -542,7 +538,7 @@ footer .footer__der a img {
 .platform .platform__cont {
   width: 60%;
   height: 500px;
-  background-color: white;
+  background-color: rgb(249, 249, 249);
   border-radius: 30px;
   box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -565,19 +561,19 @@ footer .footer__der a img {
 }
 .platform .platform__cont form label {
   font-size: 14px;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Urbanis", sans-serif;
   font-weight: 300;
-  color: black;
+  color: rgb(38, 38, 42);
   margin-top: 20px;
 }
 .platform .platform__cont form input {
   height: 40px;
   width: 100%;
-  border: 0.2px solid gray;
+  border: 0.2px solid rgb(204, 204, 204);
   border-radius: 5px;
   align-items: center;
   padding-left: 15px;
-  color: gray;
+  color: rgb(204, 204, 204);
   font-family: "Be Vietnam Pro", sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -586,7 +582,7 @@ footer .footer__der a img {
 .platform .platform__cont form button {
   height: 40px;
   width: 100%;
-  background-color: black;
+  background-color: rgb(38, 38, 42);
   border-style: none;
   border-radius: 5px;
   margin-top: 30px;
@@ -596,9 +592,9 @@ footer .footer__der a img {
 }
 .platform .platform__cont form button a {
   text-decoration: none;
-  color: white;
+  color: rgb(249, 249, 249);
   font-size: 14px;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Urbanis", sans-serif;
   font-weight: 300;
 }
 

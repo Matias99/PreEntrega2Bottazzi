@@ -11,7 +11,7 @@ header {
     display: flex; 
     align-items: center;
     justify-content: center;
-    font-family: "Urbanist", sans-serif;
+    font-family: nth($font, 1), sans-serif;
     background-color: transparent;
     z-index: 1;
 
@@ -40,10 +40,10 @@ header {
             border-radius: 10px;
             li {
                 a {
-                    color: rgba(48, 48, 53);
+                    color: $color-3;
                     text-decoration: none;
-                    font-size: 16px;
-                    font-weight: 200;
+                    font-size: nth($p-size, 3);
+                    font-weight: nth($font-w, 1);
                     &::before {
                         content: '';
                         position: absolute;
@@ -51,11 +51,11 @@ header {
                         left: 0;
                         width: 0;
                         height: 1px;
-                        background: linear-gradient(to right, #177BFF 0%, #797EF3 100%);
+                        background: $color-6;
                         transition: 0.5s;
                     }
                     &:hover {
-                        background: linear-gradient(to right, #177BFF, #797EF3); /* Gradiente del texto al pasar el puntero */
+                        background: $color-6; /* Gradiente del texto al pasar el puntero */
                         color: transparent;
                         background-clip: text;
                         transition: 0.5s;

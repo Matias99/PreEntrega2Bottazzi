@@ -13,9 +13,9 @@
 
     h2 {
         text-align: center;
-        font-size: 42px;
-        font-family: "Urbanist", sans-serif;
-        font-weight: 500;    
+        font-size: nth($h-size, 2);
+        font-family: nth($font, 1), sans-serif;
+        font-weight: nth($font-w, 4);    
     }
 
     .aboutus__cont {
@@ -32,10 +32,10 @@
         justify-content: space-between;
 
         p {
-            font-size: 14px;
-            font-family: "Be Vietnam Pro", sans-serif;
-            font-weight: 200;
-            color: #26262A;
+            font-size: nth($p-size, 2);
+            font-family: nth($font, 2), sans-serif;
+            font-weight: nth($font-w, 1);
+            color: $color-2;
             padding: 20px;
         }
 

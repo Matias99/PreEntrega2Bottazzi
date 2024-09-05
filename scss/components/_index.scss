@@ -8,18 +8,17 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: gray;
     align-items: center;
     text-align: center;
     justify-content: center;
     background-image: url(../img/fondoRelu.png);
     background-repeat: no-repeat; 
     background-position: center;
-    font-family: "Urbanist", sans-serif;
+    font-family: nth($font, 1);
     padding: 10px;
 
     h1 {
-    color: rgb(38, 38, 42);
+    color: $color-2;
     font-size: 60px;
     font-weight: 400;
     overflow: hidden;
@@ -27,26 +26,26 @@
 
     p {
     margin-top: 20px;
-    color: #303035;
-    font-size: 16px;
-    font-weight: 200;
+    color: $color-3;
+    font-size: nth($p-size, 3);
+    font-weight: nth($font-w, 1);
     }
 
     button {
     width: 180px;
     height: 50px;
     margin-top: 50px;
-    background-color: rgb(31, 21, 21);
-    color: white;
+    background-color: $color-2;
+    color: $color-1;
     border-style: none;
     border-radius: 5px;
-    font-size: 14px;
-    font-family: "Be Vietnam Pro";
+    font-size: nth($p-size, 2);
+    font-family: nth($font, 2);
     &:hover {
         transform: scale(1.05);
     a {
         text-decoration: none;
-        color: white;
+        color: $color-1;
     }
     }
     }
@@ -58,7 +57,6 @@
     min-height: 100vh;
     width: 100%;
     display: flex;
-    background-color: red;
     align-items: center;
     flex-wrap: wrap;
     height: “fit-content”;
@@ -68,7 +66,7 @@
     padding: 20px;
     
     .features__cont {
-        background-color: rgb(252, 252, 252);
+        background-color: $color-1;
         height: 350px;
         width: 400px;
         padding: 25px;
@@ -86,17 +84,17 @@
 
         h2 {
             justify-content: left;
-            font-family: "Urbanist", sans-serif;
-            font-size: 22px;
-            font-weight: 600;
+            font-family: nth($font, 2), sans-serif;
+            font-size: nth($p-size, 6);
+            font-weight: nth($font-w, 5);
         }
 
         p {
             margin-top: 10px;
-            font-family: "Be Vietnam Pro", sans-serif;
-            font-size: 14px;
-            font-weight: 300;
-            color: gray;
+            font-family: nth($font, 2), sans-serif;
+            font-size: nth($p-size, 2);
+            font-weight: nth($font-w, 2);
+            color: $color-5;
         }
     }
 }
@@ -112,18 +110,17 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: red;
     overflow: hidden;
 
     .beneficios__cont {
     height: 40px;
     width: 120px;
     padding: 8px;
-    font-family: "Be Vietnam Pro", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    color: rgb( 8, 110, 255);
-    background-color: rgb( 217, 234, 251);
+    font-family: nth($font, 2), sans-serif;
+    font-size: nth($p-size, 2);
+    font-weight: nth($font-w, 4);
+    color: $color-4;
+    background-color: $color-7;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -132,39 +129,38 @@
     }
 
     h2 {
-        font-family: "Urbanist", sans-serif;
+        font-family: nth($font, 1), sans-serif;
         text-align: center;
         margin-top: 40px;
-        color: rgb(38, 38, 42);
-        font-size: 60px;
-        font-weight: 400;
+        color: $color-2;
+        font-size: nth($h-size, 5);
+        font-weight: nth($font-w, 3);
     }
 
     p {
-    font-family: "Be Vietnam Pro", sans-serif;
+    font-family: nth($font, 1), sans-serif;
     text-align: center;
-    font-size: 16px;
-    font-weight: 200;
+    font-size: nth($p-size, 3);
+    font-weight: nth($font-w, 1);
     line-height: calc(20px*1.5);
     margin-top: 20px;
-    color: rgb(48, 48, 53);
+    color: $color-3;
     }
 
     button {
     width: 180px;
     height: 50px;
     margin-top: 25px;
-    background-color: rgb(31, 21, 21);
-    color: white;
+    background-color: $color-2;
     border-style: none;
     border-radius: 5px;
-    font-size: 14px;
-    font-family: "Be Vietnam Pro", sans-serif;
     &:hover {
         transform: scale(1.05);
     a {
         text-decoration: none;
-        color: white;
+        color: $color-1;
+        font-size: nth($p-size, 2);
+        font-family: nth($font, 2), sans-serif;    
     }
     }
     }

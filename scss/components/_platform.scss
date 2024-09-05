@@ -15,7 +15,7 @@
     .platform__cont {
         width: 60%;
         height: 500px;
-        background-color: white;
+        background-color: $color-1;
         border-radius: 30px;
         box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
         display: flex;
@@ -38,31 +38,31 @@
             justify-content: center;
 
             label {
-                font-size: 14px;
-                font-family: "Urbanist", sans-serif;
-                font-weight: 300;
-                color: black;
+                font-size: nth($p-size, 2);
+                font-family: nth($font, 1), sans-serif;
+                font-weight: nth($font-w, 2);
+                color: $color-2;
                 margin-top: 20px;
             }
 
             input {
                 height: 40px;
                 width: 100%;
-                border: 0.2px solid gray;
+                border: 0.2px solid $color-5;
                 border-radius: 5px;
                 align-items: center;
                 padding-left: 15px;
-                color: gray;
+                color: $color-5;
                 font-family: "Be Vietnam Pro", sans-serif;
-                font-size: 16px;
-                font-weight: 300;
+                font-size: nth($p-size, 3);
+                font-weight: nth($font-w, 2);
                 margin-top: 5px;
             }
 
             button {
                 height: 40px;
                 width: 100%;
-                background-color: black;
+                background-color: $color-2;
                 border-style: none;
                 border-radius: 5px;
                 margin-top: 30px;
@@ -71,10 +71,10 @@
                 }
                 a {
                     text-decoration: none;
-                    color: white;
-                    font-size: 14px;
-                    font-family: "Urbanist", sans-serif;
-                    font-weight: 300;    
+                    color: $color-1;
+                    font-size: nth($p-size, 2);
+                    font-family: nth($font, 1), sans-serif;
+                    font-weight: nth($font-w, 2);    
                 }
             }
         }
