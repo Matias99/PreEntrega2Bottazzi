@@ -89,7 +89,7 @@ nav ul li a::before {
 }
 
 nav ul li a:hover {
-    background: linear-gradient(to right, #177BFF, #797EF3); /* Gradiente del texto al pasar el puntero */
+    background: linear-gradient(to right, #177BFF, #797EF3); /* Gradiente del texto al pasar el mouse */
     color: transparent;
     background-clip: text;
     transition: 0.5s;
@@ -109,44 +109,6 @@ nav ul li a:hover {
     background-position: center;
     font-family: "Urbanist", sans-serif;
     padding: 10px;
-}
-
-.home h1 {
-    color: rgb(38, 38, 42);
-    font-size: 60px;
-    font-weight: 400;
-    /* background-color: yellow; */
-    overflow: hidden;
-}
-
-.home p {
-    margin-top: 20px;
-    color: #303035;
-    font-size: 18px;
-    font-weight: 200;
-    /* background-color: aqua; */
-}
-
-.home button {
-    width: 180px;
-    height: 50px;
-    margin-top: 50px;
-    background-color: rgb(31, 21, 21);
-    color: white;
-    border-style: none;
-    border-radius: 5px;
-    font-size: 14px;
-    font-family: "Be Vietnam Pro";
-}
-
-.home button a {
-    text-decoration: none;
-    color: white;
-}
-
-
-.home button:hover {
-    transform: scale(1.05);
 }
 
 .features {
@@ -209,7 +171,8 @@ nav ul li a:hover {
     overflow: hidden;
 }
 
-.beneficios__cont {
+.beneficios__cont,
+.services__cont {
     height: 40px;
     width: 120px;
     padding: 8px;
@@ -224,54 +187,6 @@ nav ul li a:hover {
     justify-content: center;
     overflow: hidden;
 }
-
-.beneficios h2,
-.services h2 {
-    /* background-color: darkgoldenrod; */
-    font-family: "Urbanist", sans-serif;
-    text-align: center;
-    margin-top: 40px;
-    color: rgb(38, 38, 42);
-    font-size: 60px;
-    font-weight: 400;
-}
-
-.beneficios p,
-.services p {
-    /* background-color: magenta; */
-    font-family: "Be Vietnam Pro", sans-serif;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 200;
-    line-height: calc(16px*1.5);
-    margin-top: 20px;
-    color: rgb(48, 48, 53);
-}
-
-.beneficios button,
-.services button {
-    width: 180px;
-    height: 50px;
-    margin-top: 25px;
-    background-color: rgb(31, 21, 21);
-    color: white;
-    border-style: none;
-    border-radius: 5px;
-    font-size: 14px;
-    font-family: "Be Vietnam Pro", sans-serif;
-}
-
-.beneficios button a,
-.services button a {
-    text-decoration: none;
-    color: white;
-}
-
-.beneficios button:hover,
-.services button:hover {
-    transform: scale(1.05);
-}
-
 
 footer {
     width: 100%;
@@ -298,27 +213,6 @@ footer {
     font-size: 46px;
     font-weight: 400;
     line-height: calc(46px*1.2);
-}
-
-.footer__up button {
-    width: 180px;
-    height: 50px;
-    margin-top: 30px;
-    background-color: rgb(31, 21, 21);
-    color: white;
-    border-style: none;
-    border-radius: 5px;
-    font-size: 14px;
-    font-family: "Be Vietnam Pro", sans-serif;
-}
-
-.footer__up button:hover {
-    transform: scale(1.05);
-}
-
-.footer__up button a {
-    text-decoration: none;
-    color: white;
 }
 
 footer p{
@@ -360,18 +254,6 @@ footer p{
     /* background-color: #177BFF; */
 }
 
-.services__cont {
-    height: 40px;
-    width: 120px;
-    padding: 8px;
-    font-family: "Be Vietnam Pro", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: rgb( 8, 110, 255);
-    background-color: rgb( 217, 234, 251);
-    border-radius: 5px;
-}
-
 .services__section {
     height: 100vh;
     width: 100%;
@@ -399,13 +281,6 @@ footer p{
     gap: 60px;
     align-items: center;
     /* background-color: #177BFF; */
-}
-
-.aboutus h2 {
-    text-align: center;
-    font-size: 42px;
-    font-family: "Urbanist", sans-serif;
-    font-weight: 500;
 }
 
 .aboutus__cont {
@@ -450,24 +325,6 @@ footer p{
     background-repeat: no-repeat; /* Para que la imagen no se repita */
     background-position: center;
     padding: 20px;
-}
-
-
-.contact h2 {
-    font-family: "Urbanist", sans-serif;
-    font-size: 46px;
-    font-weight: 400;
-    line-height: calc(46px*1.2);
-}
-
-.contact p {
-    font-family: "Be Vietnam Pro", sans-serif;
-    margin-top: 20px;
-    color: rgb(38, 38, 42);
-    font-size: 14px;
-    font-weight: 300;
-    line-height: calc(18px*1.5);
-    text-align: center;
 }
 
 .contact form {
@@ -628,6 +485,63 @@ footer p{
     font-size: 14px;
     font-family: "Urbanist", sans-serif;
     font-weight: 300;
+}
+
+.home h1,
+.beneficios h2,
+.services h2,
+.aboutus h2,
+.contact h2 {
+    font-family: "Urbanist", sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(38, 38, 42);
+    font-size: 60px;
+    font-weight: 400;
+    line-height: calc(60px*1.2);
+}
+
+.home p,
+.beneficios p,
+.services p,
+.contact p {
+    font-family: "Urbanist", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    color: #303035;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: calc(18px*1.4);
+}
+
+
+.home button,
+.beneficios button,
+.footer__up button,
+.services button {
+    width: 180px;
+    height: 50px;
+    margin-top: 50px;
+    background-color: rgb(31, 21, 21);
+    border-style: none;
+    border-radius: 5px;
+}
+
+.home button a,
+.beneficios button a,
+.footer__up button a,
+.services button a {
+    font-size: 14px;
+    font-family: "Be Vietnam Pro";
+    text-decoration: none;
+    color: white;
+}
+
+.home button:hover,
+.beneficios button:hover,
+.footer__up button:hover,
+.services button:hover {
+    transform: scale(1.05);
 }
 
 /* <--- MEDIA QUERY ---> */
