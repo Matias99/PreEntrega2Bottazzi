@@ -1,0 +1,19 @@
+/* asigno la variable color */
+.input-search {
+  color: red;
+}
+
+/* sass variables.scss:variables.css (esto es lo que tengo que hacer para compilar el codigo y pasarlo de scss a css despues de instalarme sass)*/
+.submit-button {
+  background-color: rgb(48, 49, 52);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  margin: 2% 40%;
+  display: flex;
+}
+
+.submit-button {
+  background-color: green;
+}/*# sourceMappingURL=variables.css.map */
