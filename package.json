@@ -11,7 +11,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/react-native-vector-icons": "^6.4.18",
     "nodemon": "^3.1.4",
     "sass": "^1.77.8"
+  },
+  "dependencies": {
+    "react-native-vector-icons": "^10.1.0"
   }
 }

@@ -67,7 +67,7 @@ header nav ul li a {
 header nav ul li a::before {
   content: "";
   position: absolute;
-  top: 100%; /* Muevo la barra en sentido vertical*/
+  top: 100%; 
   left: 0;
   width: 0;
   height: 1px;
@@ -75,7 +75,7 @@ header nav ul li a::before {
   transition: 0.5s;
 }
 header nav ul li a:hover {
-  background: linear-gradient(to right, #177BFF, #797EF3); /* Gradiente del texto al pasar el puntero */
+  background: linear-gradient(to right, #177BFF, #797EF3);
   color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
@@ -420,7 +420,7 @@ footer .footer__der a img {
   text-align: center;
   position: relative;
   background-image: url(../img/fondoRelu.png);
-  background-repeat: no-repeat; /* Para que la imagen no se repita */
+  background-repeat: no-repeat; 
   background-position: center;
 }
 .contact h2 {
@@ -785,4 +785,4 @@ footer .footer__der a img {
     height: 150px;
     width: 280px;
   }
-}/*# sourceMappingURL=estilos.css.map */
+}

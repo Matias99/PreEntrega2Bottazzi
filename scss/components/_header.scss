@@ -47,7 +47,7 @@ header {
                     &::before {
                         content: '';
                         position: absolute;
-                        top: 100%; /* Muevo la barra en sentido vertical*/
+                        top: 100%;
                         left: 0;
                         width: 0;
                         height: 1px;
@@ -55,7 +55,7 @@ header {
                         transition: 0.5s;
                     }
                     &:hover {
-                        background: $color-6; /* Gradiente del texto al pasar el puntero */
+                        background: $color-6; 
                         color: transparent;
                         background-clip: text;
                         transition: 0.5s;
