@@ -58,7 +58,7 @@ header {
     display: flex;
     justify-content: space-around;
     min-width: 300px;
-    height: 40px;
+    height: 50px;
     align-items: center;
     overflow: hidden;
     margin-left: 20px;
@@ -177,6 +177,7 @@ footer {
     height: 50vh;
     padding: 20px;
     margin-top: 300px;
+    margin-bottom: 80px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 110px 110px 110px;
@@ -233,6 +234,7 @@ footer p{
     font-family: "Urbanist", sans-serif;
     flex-wrap: wrap;
     overflow: hidden;
+    padding: 10px;
 }
 
 .services__section {
@@ -253,13 +255,14 @@ footer p{
 }
 
 .aboutus {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 60px;
     align-items: center;
+    padding: 10px;
 }
 
 .aboutus__cont {
@@ -303,7 +306,7 @@ footer p{
     background-image: url(../img/fondoRelu.png);
     background-repeat: no-repeat;
     background-position: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .contact form {
@@ -386,7 +389,7 @@ footer p{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 10px;
     background: linear-gradient(to right, rgba(23, 123, 255, 0.2), rgba(121, 126, 243, 0.2));
     overflow-y: hidden;
 }
@@ -531,6 +534,9 @@ footer p{
 @media screen and (max-width:822px) {
     
     /* <!-- ABOUT US --> */
+    .aboutus {
+        margin-top: 60px;
+    }
     .aboutus__cont {
         flex-direction: column;
         height: auto;
@@ -544,8 +550,16 @@ footer p{
 }
 
 @media screen and (max-width:680px) {
+
+    /* <!-- SERVICES --> */
+    .services {
+        margin-top: 20px;
+    }
     
     /* <!-- ABOUT US --> */
+    .aboutus {
+        margin-top: 60px;
+    }
     .aboutus__cont img {
         height: 250px;
         width: 450px;
@@ -556,6 +570,9 @@ footer p{
 @media screen and (max-width:615px) {
 
     /* <!-- SERVICES --> */
+    .services {
+        margin-top: 20px;
+    }
     .services h2 {
         font-size: 48px;
     }
@@ -601,6 +618,10 @@ footer p{
 @media screen and (max-width:515px) {
 
     /* <!-- SERVICES --> */
+
+    .services {
+        margin-top: 20px;
+    }
     .services__section img {
         height: 350px;
         width: 350px;
@@ -633,7 +654,7 @@ footer p{
 
     /* <-- HOME --> */
     .home {
-        margin-top: 0;
+        margin-top: 50px;
     } 
     .home h1 {
         font-size: 46px;
@@ -673,10 +694,21 @@ footer p{
         line-height: calc(16px*1.5);
     }
 
+    /* <!-- SERVICES --> */
+    .services {
+        margin-top: 20px;
+    }
+
+    /* <!-- ABOUT US --> */
+    .aboutus {
+        margin-top: 80px;
+    }
+
     /* <-- FOOTER --> */
     .footer {
         display: flex;
         flex-direction: column;
+        margin-bottom: 40px;
     }
     .footer__up {
         padding: 20px;
@@ -731,6 +763,10 @@ footer p{
 }
 
 @media screen and (max-width:415px) {
+
+    .footer {
+        margin-bottom: 20px;
+    }
     .footer__up h2 {
         font-size: 28px;
         line-height: calc(28px*1.2);
